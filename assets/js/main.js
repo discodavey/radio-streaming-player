@@ -7,8 +7,12 @@ play.addEventListener("click", function(){
   if(streamPlayer.paused){
     play.classList.replace('play','pause');
     streamPlayer.load();
-    streamPlayer.onloadeddata = function(){
-    setTimeout(function() {streamPlayer.play(); streamPlayer.muted = false; }, 5000)};
+    streamPlayer.onloadeddata = () => {
+      setTimeout(function() {
+        streamPlayer.play(); 
+        streamPlayer.muted = false; 
+      }
+    , 5000)};
   } else {
     streamPlayer.pause();
     streamPlayer.muted = true;
