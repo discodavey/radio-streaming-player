@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.audio-streaming-player {
+  padding: 10px 20px 0;
+  width: 410px;
+  background: #efefef;
+  border: 1px solid #ccc;
+}
+
+.play {
+  width: 64px;
+  height: 64px;
+  background: url(/assets/img/play.svg) no-repeat 0 0;
+  cursor: pointer;
+}
+
+.pause {
+  width: 64px;
+  height: 64px;
+  background: url(/assets/img/pause.svg) no-repeat 0 0;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=stylesheets.css.map */
