@@ -10,7 +10,6 @@ play.addEventListener("click", function(){
     streamPlayer.onloadeddata = () => {
       setTimeout(function() {
         streamPlayer.play(); 
-        streamPlayer.muted = false; 
       }
     , 5000)};
   } else {
