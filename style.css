@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 735px;
+  width: 100%;
+}
+
+.audio-player {
+  background: #F8F9FB;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 24px;
+  width: 100%;
+}
+
+.player-controls {
+  grid-column: 1/2;
+  margin-right: 24px;
+}
+
+.audio-player-container {
+  grid-column: 2/3;
+}
+
+.play {
+  background: #087acc url(play.svg) no-repeat center center;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.pause {
+  background: #087acc url(pause.svg) no-repeat center center;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+}
+
+.progress-bar {
+  margin: 10px 0 0;
+  border-radius: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.time-container {
+  text-align: right;
+}
+
+progress[valu]
+
+progress::-webkit-progress-bar {
+  background-color: #212121;
+}
+progress::-webkit-progress-value {
+  background-color: #212121;
+}
+progress::-moz-progress-bar {
+  /* style rules */
+  background-color: #212121;
+}

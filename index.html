@@ -5,16 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" media="screen" href="/build/stylesheets/stylesheets.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     </head>
     <body>
       <div class="container">
-        <audio class="stream-player" src="http://streaming.galaxywebsolutions.com:2020/stream/9068">
-            Your browser does not support the <code>audio</code> element.
-        </audio>
+        <audio class="stream-player" src="https://mcdn.podbean.com/mf/web/q9y53r/eLife_Community_Voices_PILOT_v2a0xp8.mp3" preload="metadata"></audio>
+        <!-- <audio class="stream-player" src="http://eclipse.galaxywebsolutions.com:7719/stream" preload="metadata"></audio> -->
 
-        <div class="audio-streaming-player">
-          <div class="play"></div>
+        <div class="audio-player">
+          <div class="player-controls">
+            <div class="play"></div>
+          </div>
+          <div class="audio-player-container">
+            <div class="time-container">
+              <span class="current"></span> / <span class="length"></span>
+            </div>
+            <progress class="progress-bar" value="70" max="100"></progress>
+          </div>
         </div>
       </div>
 
